@@ -1,0 +1,49 @@
+{
+    "name": "uptoolkit/laravel-addressable",
+    "description": "Addressable Polymorphic Eloquent Models for Laravel",
+    "keywords": ["laravel", "framework", "Laravel-Addressable", "Laravel Addressable", "Brian Faust", "Uptoolkit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@brianfaust.me",
+            "homepage": "https://brianfaust.me"
+        },
+        {
+            "name": "Daniel Sum",
+            "email": "daniel@sum.consulting",
+            "homepage": "https://sum.consulting"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/database": ">=5.0",
+        "mledoze/countries": "*"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": ">=5.0",
+        "mockery/mockery": ">=1.0",
+        "phpunit/phpunit": ">=6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uptoolkit\\Addressable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uptoolkit\\Tests\\Addressable\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uptoolkit\\Addressable\\AddressableServiceProvider"
+            ]
+        }
+    }
+}
